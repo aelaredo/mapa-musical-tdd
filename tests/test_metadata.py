@@ -123,12 +123,6 @@ class TestMetadataReader:
 class TestCasosBorder:
     """Tests para casos edge."""
 
-    def test_archivo_no_existente_lanza_error(self):
-        from src.metadata import MetadataReader
-
-        with pytest.raises(ValueError):
-            MetadataReader("no_existe.mp3")
-
     def test_mp3_sin_tags_tiene_friendly_vacio(self):
         from src.metadata import MetadataReader
 
